@@ -131,7 +131,7 @@ export const Banner = ({ language }) => {
                     </div>
                     <div className="col-10">{language === Languages.español ? resumen : resumenEN}</div>
                   </div>
-                  <a href="/Curriculum Pablo Barragan.pdf" target="_blank">
+                  <a href="/Curriculum Pablo Barragan.pdf" target="_blank" download={true}>
                     Curriculum Vitae <ArrowDownCircle size={25} />
                   </a>
                 </div>

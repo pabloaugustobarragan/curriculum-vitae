@@ -1,6 +1,6 @@
 import "./Circle.css";
 
-export const Circle = ({ percentaje, color }) => {
+export const Circle = ({ percentaje, color, children }) => {
 //   const circunference = (percentaje * 360) / 100;
 //   const radius = (circunference / 2) * Math.pi;
 //   const diameter = radius * 2;
@@ -33,6 +33,8 @@ export const Circle = ({ percentaje, color }) => {
             {percentaje}%
           </text>
         </svg>
+        <h5></h5>
+        {children}
       </div>
   );
 };

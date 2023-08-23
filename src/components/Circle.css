@@ -1,5 +1,8 @@
 .single-chart {
-  width: 55%;
+  width: 60%;
+  //height: 100px;
+  //margin-bottom: 30%;
+  margin: auto;
   /* justify-content: space-around ; */
 }
 

@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/SPPDP.png";
 import projImg4 from "../assets/img/SAC.png";
 import projImg5 from "../assets/img/TRF.png";
 import projImg6 from "../assets/img/LDAP.png";
+import projImg7 from "../assets/img/Keycloak.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -46,6 +47,12 @@ export const Projects = ({ language }) => {
       description: "Sistema de Asignación de Casos",
       subdescription: "privado",
       imgUrl: projImg4,
+    },
+    {
+      title: "Keycloak",
+      description: "Producto de software de código abierto que permite el inicio de sesión único",
+      subdescription: "https://www.keycloak.org/",
+      imgUrl: projImg7,
     },
   ];
 
@@ -145,9 +152,9 @@ export const Projects = ({ language }) => {
                             <p>Sistema de Tesorería.</p>
                             <p>Sistema de Consultorio Médico.</p>
                             <p>Sistema de Compra/Venta de Mercadería.</p>
-                            <p>
-                              Sistema de Sistema de Administración de Pagos.
-                            </p>
+                            <p>Sistema de Administración de Pagos.</p>
+                            <p>Integrar sso a todas las aplicaciones.</p>
+                            
                           </>
                         ) : (
                           <>
@@ -155,6 +162,7 @@ export const Projects = ({ language }) => {
                             <p>Medical Office System.</p>
                             <p>Merchandise Purchase/Sale System.</p>
                             <p>Payment Management System.</p>
+                            <p>Integrate sso to all applications.</p>
                           </>
                         )}
                       </Tab.Pane>

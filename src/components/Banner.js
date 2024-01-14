@@ -12,7 +12,6 @@ export const Banner = ({ language }) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 20);
-  const [index, setIndex] = useState(1);
   const toRotate = [
     "Ing. en Sistemas de Información",
     "Desarrollador Web",
@@ -73,15 +72,11 @@ export const Banner = ({ language }) => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
       setDelta(300);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
     }
   };
 
@@ -131,7 +126,7 @@ export const Banner = ({ language }) => {
                     </div>
                     <div className="col-10">{language === Languages.español ? resumen : resumenEN}</div>
                   </div>
-                  <a href="/Curriculum Pablo Barragan.pdf" target="_blank" download={true}>
+                  <a href="/Curriculum Pablo Barragan-2.pdf" className="border border-primary p-2" target="_blank" download={true}>
                     Curriculum Vitae <ArrowDownCircle size={25} />
                   </a>
                 </div>

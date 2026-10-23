@@ -13,16 +13,16 @@ export const Banner = ({ language }) => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 20);
   const toRotate = [
+    "Desarrollador Backend / Fullstack",
+    "PHP · Symfony · Java · React",
     "Ing. en Sistemas de Información",
-    "Desarrollador Web",
-    "Diseñador Web",
-    "Administrador de BD",
+    "Docente Universitario",
   ];
   const toRotateEN = [
-    "Information System Engineering",
-    "Web Developer",
-    "Web Designer",
-    "BD Administrator",
+    "Backend / Fullstack Developer",
+    "PHP · Symfony · Java · React",
+    "Information Systems Engineer",
+    "University Lecturer",
   ];
   const period = 2000;
   const date = new Date();
@@ -35,11 +35,13 @@ export const Banner = ({ language }) => {
   const resumen = `Programador con más de ${yearDevelopWeb} años en desarrollo
                     de aplicaciones web, ${yearDevelopMovil} años de
                     aplicaciones móviles y ${yearDevelopDesktop} años de
-                    aplicaciones de escritorio. Creé diversas aplicaciones
-                    dedicadas a la satisfacción de clientes. Especialista en
-                    solución de problemas y trabajo en equipo.`;
+                    aplicaciones de escritorio. Creé un framework base en
+                    Symfony y Keycloak sobre el que desarrollé 6 aplicaciones
+                    (administración, tesorería, pericias y seguimiento de
+                    casos) con entre 20 y 80 usuarios cada una. Disponible
+                    para trabajo remoto en España.`;
   const resumenEN = `
-  Programmer with over ${yearDevelopWeb} years in web app development, ${yearDevelopMovil} years in mobile apps, and ${yearDevelopDesktop} years in desktop apps. Created various applications dedicated to customer satisfaction. Specialist in problem solving and teamwork.`;
+  Programmer with over ${yearDevelopWeb} years in web app development, ${yearDevelopMovil} years in mobile apps, and ${yearDevelopDesktop} years in desktop apps. Built a base framework with Symfony and Keycloak and developed 6 applications on top of it (administration, treasury, expert fees and case tracking), each with 20 to 80 users. Available for remote work in Spain.`;
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -126,7 +128,7 @@ export const Banner = ({ language }) => {
                     </div>
                     <div className="col-10">{language === Languages.español ? resumen : resumenEN}</div>
                   </div>
-                  <a href="/Curriculum Pablo Barragan-2.pdf" className="border border-primary p-2" target="_blank" download={true}>
+                  <a href={`${process.env.PUBLIC_URL}/CV-Pablo-Augusto-Barragan.pdf`} className="border border-primary p-2" target="_blank" rel="noreferrer" download="CV-Pablo-Augusto-Barragan.pdf">
                     Curriculum Vitae <ArrowDownCircle size={25} />
                   </a>
                 </div>

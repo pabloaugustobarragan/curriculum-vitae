@@ -12,7 +12,7 @@ export const Experience = ({language}) => {
   const experiences = [
     {
       puesto: 'Desarrollador Senior',
-      ubicacion : 'Servicio Público Provincial de Defensa Penal - Santa Fe, Argentina',
+      ubicacion : 'Ministerio Público de la Defensa de la Provincia de Santa Fe, Argentina',
       fecha: '09/2019 - Presente',
       Icon: LaptopMacIcon,
       colorIcon:"success",
@@ -70,7 +70,7 @@ export const Experience = ({language}) => {
   const experiencesEN = [
     {
       puesto: 'Senior Developer',
-      ubicacion : 'Servicio Público Provincial de Defensa Penal - Santa Fe, Argentina',
+      ubicacion : 'Ministerio Público de la Defensa de la Provincia de Santa Fe, Argentina',
       fecha: '09/2019 - Now',
       Icon: LaptopMacIcon,
       colorIcon:"success",

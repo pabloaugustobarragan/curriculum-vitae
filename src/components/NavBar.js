@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/LOGO.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import { Github } from "react-bootstrap-icons";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Languages } from "../App";
 import { Stack, Typography } from "@mui/material";
@@ -104,16 +103,12 @@ export const NavBar = ({ language, setLanguage }) => {
                   <img src={navIcon1} alt="" />
                 </a>
                 <a
-                  href="https://www.facebook.com/NightCrawler1991/"
+                  href="https://github.com/pabloaugustobarragan"
                   target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
                 >
-                  <img src={navIcon2} alt="" />
-                </a>
-                <a
-                  href="https://www.instagram.com/pabloaugustobarragan/"
-                  target="_blank"
-                >
-                  <img src={navIcon3} alt="" />
+                  <Github size={24} color="#fff" />
                 </a>
               </div>
             </span>

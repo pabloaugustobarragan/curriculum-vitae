@@ -46,8 +46,8 @@ export const Skills = ({ language }) => {
               {/* <h2>Skills</h2> */}
               <h2>{language === Languages.español ? "Habilidades" : "Skills"}</h2>
               {language === Languages.español ?
-                <p>A continuación se detalla el domino de los lenguajes (Actualizado al 22/08/2023).</p> :
-                <p>Next the profency  of the languages ​​is detailed (Updated at 22/08/2023).</p>
+                <p>A continuación se detalla el domino de los lenguajes (Actualizado a octubre de 2026).</p> :
+                <p>Proficiency in each language and technology is detailed below (updated October 2026).</p>
               }
               <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={15} columns={12}>
